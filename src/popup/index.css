@@ -1,0 +1,68 @@
+body {
+  min-width: 700px;
+  min-height: 500px;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+}
+button:active {
+  filter: brightness(0.9);
+}
+
+.keyword {
+  padding: 10px 0 20px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.table-wrap {
+  font-size: 12px;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.table-row {
+  display: flex;
+  transition: 0.3;
+}
+.table-row:hover {
+  background-color: #efefef;
+}
+.table-row__header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table-cell {
+  flex: 1;
+  min-width: 100px;
+  white-space: nowrap;
+  padding: 5px 0;
+  text-align: center;
+}
+.table-cell__relKeyword {
+  padding-left: 5px;
+  font-weight: bold;
+  min-width: 100px;
+  text-align: left;
+}
+.table-cell__column {
+  font-size: 10px;
+}

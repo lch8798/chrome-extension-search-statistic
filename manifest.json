@@ -1,0 +1,20 @@
+{
+  "name": "Playground",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "scripting", "declarativeContent", "tabs"],
+  "host_permissions": ["*://*/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["*.js"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}

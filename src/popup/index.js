@@ -25,7 +25,7 @@ async function initApp() {
   // fetch search keyword statistic
   async function fetchSearchKeywordStatistic(keyword) {
     const result = await fetchData("GET", "/keywordstool", {
-      hintKeywords: encodeURI(keyword),
+      hintKeywords: encodeURI(keyword.replace(" ", "")),
       showDetail: 1,
     });
 

@@ -134,7 +134,11 @@ const COLUMNS = {
 export function parseKeywordInfos(keywordInfos) {
   return keywordInfos
     .map(parseKeywordInfo)
-    .sort((v1, v2) => v2.monthlyQcCnt - v1.monthlyQcCnt);
+    .sort(
+      (v1, v2) =>
+        (v2.monthlyQcCnt == FEW_LABEL ? 0 : v2.monthlyQcCnt) -
+        (v1.monthlyQcCnt == FEW_LABEL ? 0 : v1.monthlyQcCnt)
+    );
 }
 
 /**

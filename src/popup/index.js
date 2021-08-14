@@ -37,7 +37,7 @@ async function initApp() {
     const keyword = await getCurrentSearchKeyword();
     if (!Boolean(keyword)) {
       document.querySelector(".keyword").textContent =
-        "카러쉬 화이팅, 근데 여긴 아니야.";
+        "네이버 검색 후 실행해주세요";
 
       document.querySelector(".table-wrap").innerHTML = `
                 <a class="link" href="https://naver.com" target="_blank">네이버 바로가기</a>
